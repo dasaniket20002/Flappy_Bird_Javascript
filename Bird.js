@@ -39,10 +39,10 @@ function Bird() {
     if (this.x + this.hitbox_radius > pipe.x && this.x + this.hitbox_radius < pipe.x + pipe.wid) {
       insideStrip = true;
     }
-    if (this.y - this.hitbox_radius > -1 && this. y - this.hitbox_radius < pipe.top_length) {
+    if (this.y > -1 && this. y - this.hitbox_radius < pipe.top_length) {
       insideTop = true;
     }
-    if (this.y + this.hitbox_radius > pipe.top_length + pipe.gap && this.y + this.hitbox_radius < height + 1) {
+    if (this.y + this.hitbox_radius > pipe.top_length + pipe.gap && this.y < height + 1) {
       insideBottom = true;
     }
 
