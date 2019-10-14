@@ -9,7 +9,7 @@ var gameOver = false;
 var noiseX = 0;
 
 function setup() {
-  createCanvas(480, 600);
+  createCanvas(windowWidth, windowHeight);
   bird = new Bird();
   pipes.push(new Pipe());
 
